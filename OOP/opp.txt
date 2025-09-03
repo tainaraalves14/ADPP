@@ -1,0 +1,22 @@
+OOP significa Programação Orientada a Objetos (Object-Oriented Programming),
+que é um paradigma de programação baseado no conceito de "objetos".
+
+Encapsulamento
+
+Esconde os detalhes internos do objeto e expõe apenas o necessário.
+Ex: Uma ContaBancaria tem um saldo, mas você não mexe diretamente nele — você usa depositar() ou sacar().
+
+Herança
+
+Permite que uma classe herde comportamentos e atributos de outra.
+Ex: Funcionario é uma classe base, CLT e PJ são subclasses.
+
+Polimorfismo
+
+Objetos de diferentes classes podem ser tratados como objetos de uma classe comum, geralmente a classe-mãe.
+Ex: Você pode chamar .pagar() em qualquer Funcionario, CLT ou PJ.
+
+Abstração
+
+Foca no essencial, escondendo detalhes complexos.
+Ex: Um objeto Carro pode ter um método acelerar() sem que você precise saber como o motor funciona por dentro.
