@@ -7,23 +7,25 @@ from datetime import datetime
 # ----------------------------
 
 # 1. Conta Bancária
-class Conta:
-    def __init__(self, numero, titular):
-        self.numero = numero
-        self.titular = titular
-        self.saldo = 0
+class Conta:                                      #modelo / receita = conta bancária 
+    def __init__(self, numero, titular):          #__init__ é um método chamado automaticamente quando criamos um novo objeto
+        self.numero = numero                      #self representa a própria instância do objeto (a conta que será criada)
+        self.titular = titular                    #significa que estamos armazenando o nome do titular
+        self.saldo = 0                            #armazenando o salto da conta que inicia em 0 
 
-    def depositar(self, valor):
-        if valor > 0:
-            self.saldo += valor
+    def depositar(self, valor):                   #Método depositar ( como deve ser feito)
+        if valor > 0:                             #se o valor for menor 0 ( valores positivos)
+            self.saldo += valor                         #armazenamos o valor 
 
-    def sacar(self, valor):
-        if 0 < valor <= self.saldo:
-            self.saldo -= valor
+    def sacar(self, valor):                       #Método Sacar 
+        if 0 < valor <= self.saldo:                 #valor for positivo e menor ou igual ao saldo atual
+            self.saldo -= valor                            #Se a condição for verdadeira, diminui o saldo.
 
     def extrato(self):
-        return f"Conta {self.numero} - Saldo: R${self.saldo:.2f}"
+        return f"Conta {self.numero} - Saldo: R${self.saldo:.2f}"    
+    #Retorna uma string formatada com o número da conta e o saldo atual com duas casas decimais
 
+    
 
 # 2. Carrinho de Compras
 class Item:
