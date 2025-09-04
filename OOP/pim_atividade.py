@@ -55,29 +55,34 @@ class Carrinho:
 
 # 3. Biblioteca de Mídias
 class Midia:
-    def __init__(self, titulo, ano):
+    def __init__(self, titulo, ano):                        #inicializa o objeto com dois atributos
         self.titulo = titulo
         self.ano = ano
 
-    @property
+    @property 
+    #Um decorador jeito  de modificar o comportamento de uma função ou método
+    #sem # tem que usar os parênteses para chamar o método
+
     def idade(self):
         return datetime.now().year - self.ano
+    #Ele retorna a diferença entre o ano atual (datetime.now().year) e o ano da mídia (self.ano)
 
 
-class Filme(Midia):
+class Filme(Midia):                                         #Subclasse: Filme 
     def __init__(self, titulo, ano, duracao):
-        super().__init__(titulo, ano)
+        ## chama o __init__ da classe Midia
+        super().__init__(titulo, ano)                       #super() é uma função que chama métodos da classe pai (superclasse)
         self.duracao = duracao
 
 
-class Livro(Midia):
+class Livro(Midia):                                         ##Subclasse
     def __init__(self, titulo, ano, paginas):
         super().__init__(titulo, ano)
         self.paginas = paginas
 
 
 # 4. Agenda de Contatos
-class Contato:
+class Contato:                                             
     def __init__(self, nome, email):
         self.nome = nome
         self.email = email
