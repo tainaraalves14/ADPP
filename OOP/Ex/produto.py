@@ -13,9 +13,9 @@ class Produto:
 
     def vender (self, quantidade)              #desde que tenha estoque suficiente e a quantidade seja positiva
         if 0 < quantidade <= self.estoque:     # ( se zero é menor que quantidade, a quantidade necessariamente é maior que zero) 
-            self.estoque -= quantidade         
-            return True
-        return False  
+            self.estoque -= quantidade         #retira do estoque
+            return True                        # retorna que a venda foi finalizada 
+        return False                           # Caso a quantidade do estoque for menor que 0 (...a quantidade é maior que zero?)
         
     def esta_disponivel(self):
         return self.estoque > 0

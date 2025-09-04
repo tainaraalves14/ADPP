@@ -1,0 +1,53 @@
+Nível 1 – Fundamentos da Orientação a Objetos
+1.Conta Bancária
+Implemente a classe Conta com atributos numero, titular e saldo (inicial em 0).
+ Métodos: depositar, sacar, extrato. O saque não pode deixar o saldo negativo.
+
+
+2.Carrinho de Compras
+Implemente as classes Item(nome, preco, qtd) e Carrinho. O carrinho deve permitir 
+adicionar itens e calcular o valor total.
+
+
+3. Biblioteca de Mídias
+Crie a classe Midia(titulo, ano) e subclasses Filme(duracao) e Livro(paginas).
+ Inclua uma propriedade idade calculada a partir do ano.
+
+
+4.Agenda de Contatos
+Crie a classe Contato(nome, email). Dois contatos devem ser considerados iguais 
+se tiverem o mesmo e-mail. 
+
+
+5. Conversor de Unidades
+Crie a classe Conversor com métodos estáticos: celsius_para_fahrenheit, 
+fahrenheit_para_celsius.
+
+Nível 2 – Herança e Polimorfismo
+
+6.Folha de Pagamento
+Crie a classe Funcionario e subclasses CLT(salario) e PJ(horas, valor_hora), 
+cada uma com método pagar().
+
+7.Formas Geométricas
+Implemente Forma com método area e reescreva para cada forma. Subclasses:
+Circulo, Retangulo. Escreva função que receba uma lista de formas e calcule 
+a soma das áreas.
+
+8. Sistema de Arquivos (mini)
+Crie Arquivo(tamanho) e Pasta que contém arquivos e outras pastas.
+Ambas devem ter o método tamanho_total().
+
+Nível 3 – Projetos Integradores
+
+9. Marketplace
+Implemente as classes Produto, Estoque, Pedido, ItemPedido e Pagamento. Regras: 
+não vender sem estoque, cupom válido, cálculo de frete.
+
+10.Motor de Fluxo de Chatbot
+Crie a classe "Nó" com método executar(contexto) e subclasses como Mensagem, Pergunta 
+e Condicao. O fluxo deve executar nós encadeados.
+
+11.Sistema de Reserva de Salas
+Implemente Sala(capacidade) e Reserva(sala, inicio, fim). A Agenda deve impedir 
+sobreposição de horários.

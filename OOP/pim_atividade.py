@@ -18,16 +18,18 @@ class Conta:                                      #modelo / receita = conta banc
             self.saldo += valor                         #armazenamos o valor 
 
     def sacar(self, valor):                       #Método Sacar 
-        if 0 < valor <= self.saldo:                 #valor for positivo e menor ou igual ao saldo atual
-            self.saldo -= valor                            #Se a condição for verdadeira, diminui o saldo.
+        if 0 < valor <= self.saldo:               #valor for positivo e menor ou igual ao saldo atual  (...a quantidade é maior que zero)
+            self.saldo -= valor                   #Se a condição for verdadeira, diminui o saldo.
 
     def extrato(self):
         return f"Conta {self.numero} - Saldo: R${self.saldo:.2f}"    
     #Retorna uma string formatada com o número da conta e o saldo atual com duas casas decimais
 
-    
+
 
 # 2. Carrinho de Compras
+
+# item tem ----- nome ----- preço ---- quantidade 
 class Item:
     def __init__(self, nome, preco, qtd):
         self.nome = nome
@@ -35,18 +37,20 @@ class Item:
         self.qtd = qtd
 
     def total(self):
-        return self.preco * self.qtd
+        return self.preco * self.qtd                       # Total = preço * quantidade 
 
-
+# Carrinho tem ( Item [])
 class Carrinho:
     def __init__(self):
         self.itens = []
 
-    def adicionar(self, item: Item):
-        self.itens.append(item)
+    def adicionar(self, item: Item):    
+        self.itens.append(item)                             #Adicionar no final de uma lista 
 
     def total(self):
-        return sum(item.total() for item in self.itens)
+        return sum(item.total() for item in self.itens)    # sun = soma 
+        #uma lista de objetos — cada objeto tem um método total()
+        #Ela percorre cada item dentro da lista self.itens
 
 
 # 3. Biblioteca de Mídias
