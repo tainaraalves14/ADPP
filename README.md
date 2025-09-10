@@ -1,6 +1,6 @@
-# Aplicações Digitais: Planejamento e Produção 4
+# Aplicações Digitais: Planejamento e Produção 
 
-Este repositório contém materiais de estudo e testes referentes à disciplina **Aplicações Digitais: Planejamento e Produção 4**.
+Este repositório contém materiais de estudo e testes referentes à disciplina **Aplicações Digitais: Planejamento e Produção **.
 
 ---
 
