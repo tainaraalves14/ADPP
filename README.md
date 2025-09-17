@@ -11,9 +11,6 @@ Este repositório contém materiais de estudo e testes referentes à disciplina 
 
 ---
 
-
----
-
 ## Tecnologias Utilizadas
 
 - Python 3.x
