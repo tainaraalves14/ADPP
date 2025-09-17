@@ -11,10 +11,6 @@ Este repositório contém materiais de estudo e testes referentes à disciplina 
 
 ---
 
-## Organização dos arquivos
-
-- `/estudo` - Diretório com materiais teóricos, resumos e exemplos.
-- `/testes` - Diretório com scripts e códigos para prática, incluindo testes unitários.
 
 ---
 
