@@ -71,7 +71,8 @@ def meu_decorator(func):
 #Classes abstratas 
 from abc import ABC, abstractmethod
 #ABC = Abstract Base Class (Classe Base Abstrata)
-#abstractmethod = decorador que marca um método como abstrato, ou seja, obrigatório de ser implementado pelas subclasses.
+#abstractmethod = decorador que marca um método como abstrato, ou seja, 
+# obrigatório de ser implementado pelas subclasses.
 
 #A ideia é criar uma estrutura base (como um "molde") que obriga outras classes a implementarem certos métodos.
 class FiguraGeometrica(ABC):
